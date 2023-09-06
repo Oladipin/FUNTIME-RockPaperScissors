@@ -30,6 +30,7 @@ function runGame(playerChoice) {
     compOutcome.alt = choices[compChoice];
 
     resultDisplay.innerHTML = checkWinner(playerChoice, compChoice);
+    increamentPlayerScore();
 }
 
 function checkWinner(playerChoice, compChoice) {
@@ -45,7 +46,10 @@ function checkWinner(playerChoice, compChoice) {
 }
 
 function increamentPlayerScore() {
-
+    let count = parseInt(document.getElementById("player-score").innerText);
+    if (resultDisplay.innerHTML == "You Win!") {
+        document.getElementById("player-score").innerText = ++count;
+    }
 }
 
 function increamentComputerScore() {
