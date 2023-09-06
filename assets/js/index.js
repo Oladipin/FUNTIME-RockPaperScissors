@@ -26,13 +26,22 @@ function runGame(playerChoice) {
     playerOutcome.alt = choices[playerChoice];
 
     let compChoice = Math.floor(Math.random() * 3);
-
     compOutcome.src = `assets/images/${choices[compChoice]}.png`;
     compOutcome.alt = choices[compChoice];
+
+    resultDisplay.innerHTML = checkWinner(playerChoice, compChoice);
 }
 
-function checkWinner() {
-
+function checkWinner(playerChoice, compChoice) {
+    if (playerChoice == compChoice) {
+        return "Draw!";
+    } else if (playerChoice == 0) {
+        return (compChoice == 2) ? "You Win!" : "You Lose!";
+    } else if (playerChoice == 1) {
+        return (compChoice == 0) ? "You Win!" : "You Lose!";
+    } else if (playerChoice == 2) {
+        return (compChoice == 1) ? "You Win!" : "You Lose!";
+    }
 }
 
 function increamentPlayerScore() {
