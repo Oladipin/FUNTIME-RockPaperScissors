@@ -10,7 +10,7 @@ let choices = ["rock0", "paper1", "scissors2"];
 // Event listeners for DOM to finish loading and to get button element
 
 document.addEventListener("DOMContentLoaded", function () {
-    let buttons = document.getElementsByTagName("button");
+    let buttons = document.getElementsByClassName("choice-btn");
     for (let button of buttons) {
         button.addEventListener("click", function () {
             let playerChoice = this.getAttribute("data-type");
@@ -31,6 +31,7 @@ function runGame(playerChoice) {
 
     resultDisplay.innerHTML = checkWinner(playerChoice, compChoice);
     increamentPlayerScore();
+    increamentComputerScore();
 }
 
 function checkWinner(playerChoice, compChoice) {
@@ -48,10 +49,13 @@ function checkWinner(playerChoice, compChoice) {
 function increamentPlayerScore() {
     let count = parseInt(document.getElementById("player-score").innerText);
     if (resultDisplay.innerHTML == "You Win!") {
-        document.getElementById("player-score").innerText = ++count;
+        document.getElementById("player-score").innerText= ++count;
     }
 }
 
 function increamentComputerScore() {
-
+    let count = parseInt(document.getElementById("comp-score").innerText);
+    if (resultDisplay.innerHTML == "You Lose!") {
+        document.getElementById("comp-score").innerText = ++count;
+    }
 }
