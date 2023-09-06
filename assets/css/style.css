@@ -53,7 +53,7 @@ h1 {
 }
 
 .choice-btn {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .choice-btn:hover {
@@ -81,10 +81,10 @@ h1 {
 }
 
 #reset-btn:hover {
-        cursor: pointer;
+    cursor: pointer;
 }
 
-#restart{
+#restart {
     text-align: center;
 }
 
@@ -92,4 +92,63 @@ h1 {
     text-align: center;
     color: #001052;
     margin-top: 30px;
+}
+
+/* Media query */
+/* For smaller screen size from 500px and down*/
+@media screen and (max-width: 500px) {
+
+    #player-outcome,
+    #comp-outcome {
+        height: 100px;
+        width: 100px
+    }
+
+    #outcome {
+        gap: 20px;
+        line-height: 90px;
+    }
+
+
+    .choice-btn {
+        margin-left: 20px;
+        height: 50px;
+        width: 50px;
+    }
+
+    #choice {
+        margin-right: 50px;
+    }
+
+    #rules {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    #player-outcome,
+    #comp-outcome {
+        height: 80px;
+        width: 80px
+    }
+
+    #outcome {
+        gap: 10px;
+        line-height: 70px;
+    }
+
+    .choice-btn {
+        margin-left: 40px;
+        height: 30px;
+        width: 30px;
+    }
+
+    #choice {
+        margin-left: -20px;
+    }
+
+    #rules {
+        font-size: 60%;
+    }
 }
