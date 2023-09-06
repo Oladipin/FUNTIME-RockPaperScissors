@@ -23,4 +23,13 @@ h1 {
     color: #001052;
 }
 
+/* Game Area */
+#game-area {
+    background-color: #001052;
+    width: 70%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
