@@ -21,15 +21,75 @@ h1 {
 #heading {
     text-align: center;
     color: #001052;
+    padding: 20px 0;
 }
 
 /* Game Area */
 #game-area {
     background-color: #001052;
-    width: 70%;
+    width: 80%;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    padding: 1%;
 }
 
+#outcome {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    line-height: 120px;
+    margin-top: 30px;
+}
 
+#selection {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#choice {
+    text-align: center;
+}
+
+.choice-btn {
+    margin-left: 20px;
+}
+
+.choice-btn:hover {
+    cursor: pointer;
+}
+
+#result {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+#score-area {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#reset-btn {
+    background-color: #001052;
+    color: white;
+    font-family: inherit;
+    padding: 10px 10px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+#reset-btn:hover {
+        cursor: pointer;
+}
+
+#restart{
+    text-align: center;
+}
+
+#rules {
+    text-align: center;
+    color: #001052;
+    margin-top: 30px;
+}
