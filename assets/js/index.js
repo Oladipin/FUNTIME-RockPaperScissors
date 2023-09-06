@@ -14,14 +14,21 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let button of buttons) {
         button.addEventListener("click", function () {
             let playerChoice = this.getAttribute("data-type");
-            runGame();
+            runGame(playerChoice);
 
         });
     };
 
 });
-function runGame() {
-    
+
+function runGame(playerChoice) {
+    playerOutcome.src = `assets/images/${choices[playerChoice]}.png`;
+    playerOutcome.alt = choices[playerChoice];
+
+    let compChoice = Math.floor(Math.random() * 3);
+
+    compOutcome.src = `assets/images/${choices[compChoice]}.png`;
+    compOutcome.alt = choices[compChoice];
 }
 
 function checkWinner() {
