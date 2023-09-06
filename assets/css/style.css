@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Lemon&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+body {
+    font-family: aldrich, serif;
+    color: white;
+}
+
+/* Heading*/
+h1 {
+    font-family: lemon, sans-serif;
+    font-weight: 200;
+    font-size: 150%;
+}
+
+#heading {
+    text-align: center;
+    color: #001052;
+}
+
+
