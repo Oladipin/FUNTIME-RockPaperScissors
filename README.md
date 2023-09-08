@@ -1,5 +1,9 @@
 # FUNTIME Rock paper Scissors
 
+Live - https://oladipin.github.io/FUNTIME-RockPaperScissors/
+
+Source - https://github.com/oladipin/FUNTIME-RockPaperScissors
+
 FUNTIME Rock Paper Scissor is a single player game which allows user  to compete with the computer.
 
 Users of this game can have fun playing this game and will immediately tell the winner with just a single click on their choice button.
