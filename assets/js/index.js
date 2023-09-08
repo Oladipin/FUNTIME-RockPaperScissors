@@ -47,15 +47,15 @@ function checkWinner(playerChoice, compChoice) {
 }
 
 function increamentPlayerScore() {
-    let count = parseInt(document.getElementById("player-score").innerText);
+    let count = parseInt(playerScore.innerText);
     if (resultDisplay.innerHTML == "You Win!") {
-        document.getElementById("player-score").innerText= ++count;
+        playerScore.innerText = ++count;
     }
 }
 
 function increamentComputerScore() {
-    let count = parseInt(document.getElementById("comp-score").innerText);
+    let count = parseInt(compScore.innerText);
     if (resultDisplay.innerHTML == "You Lose!") {
-        document.getElementById("comp-score").innerText = ++count;
+        compScore.innerText = ++count;
     }
 }
