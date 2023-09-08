@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+// function to run game
 function runGame(playerChoice) {
     playerOutcome.src = `assets/images/${choices[playerChoice]}.png`;
     playerOutcome.alt = choices[playerChoice];
@@ -33,7 +34,9 @@ function runGame(playerChoice) {
     increamentPlayerScore();
     increamentComputerScore();
 }
-
+/** 
+ * This function compares the player choice and the computer choice and draws a winner from it
+ */
 function checkWinner(playerChoice, compChoice) {
     if (playerChoice == compChoice) {
         return "Draw!";
@@ -46,6 +49,7 @@ function checkWinner(playerChoice, compChoice) {
     }
 }
 
+//  function to increament player score by 1
 function increamentPlayerScore() {
     let count = parseInt(playerScore.innerText);
     if (resultDisplay.innerHTML == "You Win!") {
@@ -53,6 +57,7 @@ function increamentPlayerScore() {
     }
 }
 
+//  function to increament computer score by 1
 function increamentComputerScore() {
     let count = parseInt(compScore.innerText);
     if (resultDisplay.innerHTML == "You Lose!") {

@@ -110,6 +110,7 @@ h1 {
 }
 
 /* Media query */
+
 /* For smaller screen size from 500px and down*/
 @media screen and (max-width: 500px) {
 
@@ -140,6 +141,7 @@ h1 {
     }
 }
 
+/* For smaller screen size from 350px and down*/
 @media screen and (max-width: 350px) {
 
     #player-outcome,
