@@ -112,6 +112,7 @@ The four(4) divisions are:
 **Contents**
 
 - Rules of the games was taken from [World Rock Paper Scissors Association](https://wrpsa.com/the-official-rules-of-rock-paper-scissors/)
+- The code for Event listeners was coined from [Rock Paper Scisssors](https://www.youtube.com/watch?v=apK6caj8bfI) portfolio project scope.
 
 ### Media
 
